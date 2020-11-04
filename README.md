@@ -4,8 +4,8 @@ This is a sample repository to help you get started with setting up your polyglo
 I have taken an opinionated approach to how the repo is structured. It is optimized for quick iterative development (achieved via fast incremental builds) and high reliability (fast and lightweight unit tests, which encourages developers to write and run more tests).
 
 * `tools` - *Build Toolchains reside here. (Bazel rule defs, utilities, etc.)*
-* `third_party` - *All 3rd party dependencies, including node_modules, external java libraries, go packages, etc. reside here.*
-* `src` - *Top level classification by language.*
+* `third_party` - *All 3rd party/Open Source dependencies, including typescript/javascript libraries, React components, external java libraries, go packages, etc. reside here.* **NOTE: These are source files, and not compiled archives and binaries.** *This is a convenient way to demarcate between code you own and others' code.*
+* `src` - *This is where you host your code. Opinionated choice: Top level classification by language.*
     * `ts` - Typescript (and Javascript)
       - `src` - Source packages belong here. - *Second level by server (services, server libraries) vs. client (client libs, commands, apps, etc.) vs. common. But, this is flexible and you can choose whatever structure is apt for you.*
         - `server`
